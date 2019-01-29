@@ -1,8 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
 
+// importing the routes
 var indexRouter = require('./routes/index');
 var projectRouter = require('./routes/projects');
 
@@ -12,10 +11,8 @@ var app = express();
 app.set('view engine', 'pug');
 
 //setting up middleware + static
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use('/static', express.static('public'));
 
 // using the  index

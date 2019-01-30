@@ -7,11 +7,20 @@
   },
   "dependencies": {
     "express": "~4.16.0",
-    "http-errors": "~1.6.2"
+    "http-errors": "~1.6.2",
+    "pug": "^2.0.0-beta11"
   },
   "description": "I have changed the CSS a bit, made imgs on\r first page go round when hovered,\r made images pop up on the project page\r made links pop up on project and about page\r (github/demo)\r made all error requirements for exceeds.",
   "main": "app.js",
   "devDependencies": {},
   "author": "Zaid Anki",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaidanki/Porject-6FSJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaidanki/Porject-6FSJS/issues"
+  },
+  "homepage": "https://github.com/zaidanki/Porject-6FSJS#readme"
 }

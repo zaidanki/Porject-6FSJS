@@ -8,24 +8,24 @@ block content
       .cell.small-6.medium-9.large-9
 
         //- Used interploation to dynamically add the project title.
-        h1= proj.title
+        h1= proj.project_name
 
         //- Used interploation to dynamically add the project description.
         p.lead.text-light
-          =proj.disc
+          =proj.description
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
         //- Used an `each` iterator to replace the li tags below and interploation to dynamically add the technologies used in each project.
         ul
-         for techs in proj.tech
+         for techs in proj.technologies
           li=techs
 
         //- Used template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
-        a.button.expanded(href=proj.live) Live Demo
-        a.button.expanded(href=proj.rep) GitHub Repo
+        a.button.expanded(href=proj.live_link) Live Demo
+        a.button.expanded(href=proj.github_link) GitHub Repo
     
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see.
-    for imgs in proj.imgs
+    for imgs in proj.image_urls
      img.image(src=imgs)
